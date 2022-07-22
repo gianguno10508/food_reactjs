@@ -1,0 +1,74 @@
+
+.all-food h2{
+    text-align: center;
+    font-size: 4em;
+}
+.all-food .starter .row p{
+    font-size: 24px;
+}
+.all-food h2::first-letter{
+    text-transform: uppercase;
+}
+.all-food .searchBox{
+    display: flex;
+    margin-right: 50px;
+    justify-content: right;
+    padding-top: 20px;
+}
+.all-food .searchBox input{
+    width: 350px;
+    height: 35px;
+    text-align: center;
+    border-radius: 20px;
+}
+.all-food .row .col .content{
+    padding-bottom: 10px;
+    text-align: center;
+}
+.all-food .row .col .content h4{
+    margin: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.all-food .row .col .icon img{
+    max-width: 100%;
+}
+
+
+.starter .row-starter button.slick-arrow{
+    background-color: red;
+    border-radius: 10px;
+    top: 60%;
+}
+.starter .row-starter .col-starter {
+    width: 95% !important;
+}
+.starter .row-starter .col-starter .icon img{
+    max-width: 100%;
+}
+.starter .row-starter .col-starter .content{
+    padding-bottom: 10px;
+    text-align: center;
+}
+.starter .row-starter .col-starter .content h4{
+    margin: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.starter .detail{
+    margin-top: 25px;
+}
+.starter .detail h2{
+    font-size: 3em;
+    margin-bottom: 15px;
+}
+.starter .detail .row .col img{
+    width: 100%;
+}
+.starter .detail .row .col .intro p{
+    font-size: 16px;
+    overflow: hidden;
+    max-height: 270px;
+}

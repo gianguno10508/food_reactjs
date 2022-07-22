@@ -1,0 +1,23 @@
+.footer{
+    background-color: #363636;
+    color: rgb(218 218 218);
+}
+.footer .row{
+    padding: 40px 0;
+}
+.footer .row .andress p span .icon{
+    padding-right: 5px;
+}
+.footer .row .andress p{
+    letter-spacing: 1px;
+}
+.end-footer{
+    background-color: #030303;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.end-footer span{
+    letter-spacing: 10px;
+}

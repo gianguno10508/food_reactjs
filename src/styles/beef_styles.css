@@ -1,0 +1,25 @@
+.beef{
+    margin-top: 50px;
+    padding-bottom: 60px;
+}
+.beef .row-beef button.slick-arrow{
+    background-color: red;
+    border-radius: 10px;
+    top: 60%;
+}
+.beef .row-beef .col-beef {
+    width: 95% !important;
+}
+.beef .row-beef .col-beef .icon img{
+    max-width: 100%;
+}
+.beef .row-beef .col-beef .content{
+    padding-bottom: 10px;
+    text-align: center;
+}
+.beef .row-beef .col-beef .content h4{
+    margin: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}

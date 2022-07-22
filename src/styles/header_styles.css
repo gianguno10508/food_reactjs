@@ -1,0 +1,50 @@
+.header{
+    background-image: url('../img/restaurant-slide1.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    background-position: center center;
+}
+.header .menu{
+    display: flex;
+    justify-content: center;
+
+}
+.header .menu ul li{
+    display: inline-block;
+    padding: 18px 50px;
+}
+.header .menu ul li.logo-page a{
+    font-weight: 800;
+    font-size: 24px;
+}
+.header .menu ul li a{
+    text-decoration: none;
+    font-size: 20px;
+    color: #333;
+}
+.header .textBanner{
+    padding: 190px;
+}
+.header .textBanner h2{
+    font-size: 4.3em;
+    letter-spacing: 7px;
+}
+.header .textBanner h3{
+    font-size: 2em;
+    letter-spacing: 7px;
+}
+.header .textBanner p{
+    margin-bottom: 25px;
+}
+.header .textBanner button{
+    font-size: 1.4em;
+    padding: 15px 35px;
+    background-color: orange;
+    border-radius: 20px;
+}
+.header .textBanner button a{
+    text-decoration: none;
+    color: #333;
+}
