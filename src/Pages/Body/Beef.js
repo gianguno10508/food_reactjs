@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import Slider from 'react-slick';
-import Data from '../api/GetData';
-import '../styles/beef_styles.css';
+import Data from '../../api/GetData';
+import '../../styles/beef_styles.css';
 
 
 function Beef() {

@@ -15,6 +15,12 @@
     display: inline-block;
     padding: 18px 50px;
 }
+.header .searchBox input{
+    width: 350px;
+    height: 35px;
+    text-align: center;
+    border-radius: 20px;
+}
 .header .menu ul li.logo-page a{
     font-weight: 800;
     font-size: 24px;
@@ -23,6 +29,12 @@
     text-decoration: none;
     font-size: 20px;
     color: #333;
+}
+.all-food .searchBox{
+    display: flex;
+    margin-right: 50px;
+    justify-content: right;
+    padding-top: 20px;
 }
 .header .textBanner{
     padding: 190px;
