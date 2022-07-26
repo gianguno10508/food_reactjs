@@ -30,7 +30,6 @@ function Category(props) {
             };
             fetchDataStarter();
         }, [props.select_category]);
-        console.log(props.select_category);
         return (
             <div>
                 {(Array.isArray(dishes) && dishes != "") ? 

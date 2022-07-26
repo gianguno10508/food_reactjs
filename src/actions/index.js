@@ -1,4 +1,4 @@
-import { GET_FOOD_AREA, GET_FOOD_CATEGORY } from "../const/action-types";
+import { GET_FOOD_AREA, GET_FOOD_CATEGORY, GET_FOOD_SEARCH } from "../const/action-types";
 
 export const actSelectDishCategory = (data) => {
   return {
@@ -11,4 +11,10 @@ export const actSelectDishArea = (data) => {
       type: GET_FOOD_AREA,
       data,
     };
+};
+export const actSearchDish = (data) => {
+  return {
+    type: GET_FOOD_SEARCH,
+    data,
+  };
 };

@@ -1,2 +1,3 @@
 export const GET_FOOD_CATEGORY = "GET_FOOD_CATEGORY";
 export const GET_FOOD_AREA = "GET_FOOD_AREA";
+export const GET_FOOD_SEARCH = "GET_FOOD_SEARCH";

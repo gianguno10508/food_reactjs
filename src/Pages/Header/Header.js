@@ -2,12 +2,11 @@ import { useEffect, useState } from "react";
 import { Link } from "react-router-dom"
 import Data from "../../api/GetData";
 import '../../styles/header_styles.css';
-import Select from "./Select";
 import { connect } from "react-redux";
+import { actSearchDish } from "../../actions";
 
 function Header(props) {
     const [listMeal, setListMeal] = useState([]);
-    const [categorySelected, setCategorySelected] = useState("Breakfast");
     useEffect(() => {
       const fetchDataList = async () => {
         try {
@@ -22,7 +21,7 @@ function Header(props) {
       fetchDataList();
     }, []);
     const handleItemClick = (event, index) => {
-        setCategorySelected(listMeal[index].strCategory);
+        props.chooseDishSearch(listMeal[index].strCategory);
     };
     return (
         <div className="content">
@@ -48,10 +47,10 @@ function Header(props) {
                                     <Link className="nav-link" to="/">BambooFood</Link>
                                 </li>
                                 <li className="nav-item">
-                                    <Link className="nav-link" to="/">Contact</Link>
+                                    <Link className="nav-link" to="/contact">Contact</Link>
                                 </li>
                                 <li className="nav-item">
-                                    <Link className="nav-link" to="/">About</Link>
+                                    <Link className="nav-link" to="/about">About</Link>
                                 </li>
                                 <li className="nav-item">
                                 </li>
@@ -59,7 +58,7 @@ function Header(props) {
                             <div className='searchBox'>
                                 <input type="text" placeholder="Tell me what food do you want?" onKeyPress={(event) => {
                                     if (event.key === "Enter") {
-                                        setCategorySelected(event.target.value);
+                                        props.chooseDishSearch(event.target.value);
                                     }
                                 }} />
                             </div>                            
@@ -74,17 +73,22 @@ function Header(props) {
                     <button><a href='test'>Feature Food</a></button>
                 </div>
             </div>
-            <div className="main-search">
-                <Select dataFromSelect={categorySelected} />
-            </div>
         </div>
     );
 }
+const mapDispatchToProps = (dispatch) => {
+    return {
+      chooseDishSearch: (data) => {
+        dispatch(actSearchDish(data));
+      }
+    };
+};
 const mapStateToProps = (state, ownProps) => {
     return {
         select_category: state.dish_cate,
-        select_area: state.dish_area
+        select_area: state.dish_area,
+        search_data: state.dish_search
     };
 };
   
-export default connect(mapStateToProps)(Header);  
+export default connect(mapStateToProps, mapDispatchToProps)(Header);  
