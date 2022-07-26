@@ -80,6 +80,7 @@ function Search(props) {
                                       <div className='cate'>
                                         <h3>Category</h3>
                                           <div
+                                            className='clickCate'
                                             onClick={(event) => handleItemClickCategory(event)}
                                           >
                                             {dishes[dishSelected].strCategory}
@@ -88,6 +89,7 @@ function Search(props) {
                                       <div className='area'>
                                         <h3>Area</h3>
                                         <div
+                                          className='clickArea'
                                           onClick={(event) => handleItemClickArea(event)}
                                         >
                                           {dishes[dishSelected].strArea}

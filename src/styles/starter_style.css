@@ -30,6 +30,14 @@
     border-radius: 10px;
     top: 60%;
 }
+.area .clickArea,
+.cate .clickCate{
+    cursor: pointer;
+}
+.area .clickArea:hover,
+.cate .clickCate:hover{
+    color: blue;
+}
 .starter .row-starter .col-starter {
     width: 95% !important;
 }
